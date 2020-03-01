@@ -13,3 +13,7 @@ summary(subset_lifeExpectancy)
 subset_male <- subset(dataset, Subgroup=="Male")
 mean(subset_male$Value)
 
+# Create a subset for the years 1990-1995 in Spain and display the gender and life expectancy
+subset_90to95_spain <- subset(dataset, Year=="1990-1995" & Country.or.Area=="Spain", select=c("Subgroup", "Value"))
+print(subset_90to95_spain)
+
