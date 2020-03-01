@@ -5,3 +5,8 @@ dataset <- read.csv("/Users/cmhayden/interestingProjects/Visualizing-Inequalitie
 subset_gender <- subset(dataset, select=c("Subgroup"))
 summary(subset_gender)
 
+# Create a life expectancy subset and calculate the min, median, mean and max life expectancy age.
+subset_lifeExpectancy <- subset(dataset, select=c("Value"))
+summary(subset_lifeExpectancy)
+
+
