@@ -9,4 +9,7 @@ summary(subset_gender)
 subset_lifeExpectancy <- subset(dataset, select=c("Value"))
 summary(subset_lifeExpectancy)
 
+# Create a male only subset and calculate the mean life expectancy of a man at any given time.
+subset_male <- subset(dataset, Subgroup=="Male")
+mean(subset_male$Value)
 
