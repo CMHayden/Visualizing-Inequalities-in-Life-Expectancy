@@ -17,3 +17,22 @@ mean(subset_male$Value)
 subset_90to95_spain <- subset(dataset, Year=="1990-1995" & Country.or.Area=="Spain", select=c("Subgroup", "Value"))
 print(subset_90to95_spain)
 
+# Create a visualization of the previous subset
+barplot(subset_90to95_spain$Value)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
